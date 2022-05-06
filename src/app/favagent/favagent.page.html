@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Agent</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title>Your Chosen Agent is {{yourAgents}}</ion-title>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="yourAgents">
+      <ion-list-header>
+        <ion-label>Agents</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Pheonix</ion-label>
+        <ion-radio slot="start" value="Pheonix"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Jett</ion-label>
+        <ion-radio slot="start" value="Jett"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Brimstone</ion-label>
+        <ion-radio slot="start" value="Brimstone"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="savestatus()">save</ion-button>
+
+</ion-content>

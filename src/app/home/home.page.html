@@ -33,6 +33,17 @@
 <li [routerLink]="['/haven']"routerDirection="Forward">Haven</li>
 <li [routerLink]="['/split']"routerDirection="Forward">Split</li>
 </ul>
-<ion-button (click)="Flashlight()">Flashing!!!</ion-button>
+<h1>Your Favourite Agent</h1>
+<ul>
+  <li [routerLink]="['/favagent']"routerDirection="Forward">Agent Select</li>
+{{yourAgents}}<P>was your favourite agent</P>
+
+</ul>
+<h1>Valorant Version</h1>
+<ul>
+  <li [routerLink]="['/version']"routerDirection="Forward">version</li>
+
+</ul>
+
 </ion-content>
 

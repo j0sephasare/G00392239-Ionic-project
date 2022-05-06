@@ -51,6 +51,14 @@ const routes: Routes = [
     path: 'split',
     loadChildren: () => import('./split/split.module').then( m => m.SplitPageModule)
   },
+  {
+    path: 'version',
+    loadChildren: () => import('./version/version.module').then( m => m.VersionPageModule)
+  },
+  {
+    path: 'favagent',
+    loadChildren: () => import('./favagent/favagent.module').then( m => m.FavagentPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>version</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <ion-item *ngFor="let vally of valData">
+
+<ion-label>{{vally.manifestId}}</ion-label>
+<ion-label>{{vally.branch}}</ion-label>
+<ion-label>{{vally.version}}</ion-label>
+<ion-label>{{vally.buildVersion}}</ion-label>
+<ion-label>{{vally.engineVersion}}</ion-label>
+<ion-label>{{vally.riotClientVersion}}</ion-label>
+<ion-label>{{vally.buildDate}}</ion-label>
+ </ion-item>
+
+
+
+
+
+
+
+
+
+
+    <ion-button (click)="backtohome()">
+      Go to main page</ion-button>
+    
+
+
+
+
+</ion-content>
