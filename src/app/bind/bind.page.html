@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Bind</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img   src="assets/bind.jpg" alt="">
+<p>Bind Two sites. No middle. Gotta pick left or right. What’s it going to be then? Both offer direct paths for attackers and a pair of one-way teleporters make it easier to flank.</p>
+<h2> <strong>Map features</strong></h2>
+<img   src="assets/bind2.png" alt="">
+<p>Bind's 'unique' feature is that it doesn't contain a mid section, instead having two one-way teleporters. One takes players from A Short to B Short and the other takes players from B Long to A Lobby.
+
+  Players use teleporters by walking into the section of wall taken up by the teleport entrance. They will then instantly arrive in a small exit room which players leave by walking towards the door out of the room. This door is closed by default and can only be opened by players inside the exit room walking up to it, at which point they will open automatically. Players outside the exit room cannot open these doors, but they can be penetrated by gunfire.
+  
+  Other objects can also be sent through teleporters if they come into contact with the teleporter entrance. They will maintain any velocity they had before being teleported and can open the doors and leave the exit room should they travel far enough to trigger the door sensor. Objects include abilities, the spike, and dropped weapons.
+  
+  Whenever a teleporter is used by an agent or an object, all players on the map will be given an audio cue</p>
+  <h2> <strong>Call outs</strong></h2>
+  <img   src="assets/bindmap.png" alt="">
+  <ion-slides margin="20
+
+  " pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ul >
+        <li>A site</li>
+        <li>B site</li>
+        <li>Shower</li>
+        <li>Cave</li>
+        <li>Cubby</li>
+        <li>Teleporter</li>
+      </ul>
+    </ion-slide>
+    <ion-slide>
+      <ul >
+        <li>Elbow</li>
+        <li>Exit</li>
+        <li>Fountain</li>
+        <li>Garden</li>
+        <li>Hall</li>
+        <li>Lamps</li>
+        <li>Window</li>
+      </ul>
+    </ion-slide>
+    <ion-slide><ul>
+      <li>Link</li>
+      <li>Lobby</li>
+      <li>Long</li>
+      <li>Short</li>
+      <li>site</li>
+      <li>Spawn</li>
+      <li>Tower</li></ul>
+    </ion-slide>
+  </ion-slides>
+  
+  <ion-button (click)="backtohome()">
+    Go to main page</ion-button>
+</ion-content>

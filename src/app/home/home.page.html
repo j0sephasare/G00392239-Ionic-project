@@ -1,17 +1,38 @@
-<ion-header [translucent]="true">
+<ion-header  [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Valorant Wiki 
     </ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  
+  <h1>Valorant Weapons</h1>
   <ul>
-<li [routerLink]="['/vandal-skins']"routerDirection="Forward" >Vandal</li>
-<li>Phantom</li>
-<li>Ghost</li>
-<li>Sheriff</li>
+  
+<li  [routerLink]="['/vandal-skins']"routerDirection="Forward" >Vandal</li>
+<li [routerLink]="['/phantom']"routerDirection="Forward" >Phantom</li>
+<li [routerLink]="['/ghost']"routerDirection="Forward" >Ghost</li>
+<li [routerLink]="['/sheriff']"routerDirection="Forward" >Sheriff</li>
 </ul>
+
+
+ <h1>Valorant Agents</h1>
+<ul>
+ 
+<li [routerLink]="['/pheonix']"routerDirection="Forward">Pheonix</li>
+<li  [routerLink]="['/jett']"routerDirection="Forward">Jett</li>
+<li [routerLink]="['/brimstone']"routerDirection="Forward">Brimstone</li>
+</ul>
+
+<h1>Valorant Maps</h1>
+<ul>
+<li [routerLink]="['/bind']"routerDirection="Forward">Bind</li>
+<li [routerLink]="['/haven']"routerDirection="Forward">Haven</li>
+<li [routerLink]="['/split']"routerDirection="Forward">Split</li>
+</ul>
+<ion-button (click)="Flashlight()">Flashing!!!</ion-button>
 </ion-content>
 
