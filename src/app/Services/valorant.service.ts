@@ -12,6 +12,6 @@ GetValData():Observable<any>{
   return this.httpClient.get('https://valorant-api.com/v1/version');
 
 }
-
+//riot is not allowing people to use their apis at the moment for personal use but I would assume it would work if it could.
 
 }
